@@ -41,7 +41,7 @@ def user_report():
   insulin = st.sidebar.slider('Insulin', 0,846, 79 )
   bmi = st.sidebar.slider('BMI', 0,67, 20 )
   dpf = st.sidebar.slider('Diabetes Pedigree Function', 0.0,2.4, 0.47 )
-  age = st.sidebar('Age', 21,88, 33 )
+  age = st.sidebarst.text_input('Age', 21,88, 33 )
 
   user_report_data = {
       'pregnancies':pregnancies,
