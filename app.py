@@ -76,8 +76,6 @@ with tab2:
    else:
       color = 'red'
    
-   st.write("belum pre processing")
-   
    # Age vs Pregnancies
    st.header('Pregnancy count Graph (Others vs Yours)')
    fig_preg = plt.figure()
