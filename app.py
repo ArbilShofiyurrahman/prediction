@@ -25,7 +25,7 @@ st.sidebar.header('Patient Data')
 st.subheader('Training Data Stats')
 st.write(df.describe())
 
-tab1, tab2, tab3 = st.tabs(["Deskripsi Data", "Tab Visualisasi data", "Tab Modeling"])
+tab1, tab2 = st.tabs(["Deskripsi Data", "Tab Visualisasi data"])
 
 with tab1:
    st.image("dd.jpeg")
@@ -145,10 +145,6 @@ with tab2:
    plt.yticks(np.arange(0,3,0.2))
    plt.title('0 - Healthy & 1 - Unhealthy')
    st.pyplot(fig_dpf)
- 
-with tab3:
-   st.write("belum tab modeling")   
-
 
 # OUTPUT
 st.subheader('Your Report: ')
