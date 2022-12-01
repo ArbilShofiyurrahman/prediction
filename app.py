@@ -42,6 +42,11 @@ with tab2:
       dpf = st.sidebar.slider('Diabetes Pedigree Function', 0.0,2.4, 0.47 )
       age = st.sidebar.slider('Age', 21,88, 33 )
       
+      # MODEL
+      rf  = RandomForestClassifier()
+      rf.fit(x_train, y_train)
+      user_result = rf.predict(user_data)
+      
       # COLOR FUNCTION
       if user_result[0]==0:
          color = 'blue'
