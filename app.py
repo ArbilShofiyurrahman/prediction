@@ -42,18 +42,18 @@ with tab2:
       dpf = st.sidebar.slider('Diabetes Pedigree Function', 0.0,2.4, 0.47 )
       age = st.sidebar.slider('Age', 21,88, 33 )
      
-   user_report_data = {
-      'pregnancies':pregnancies,
-      'glucose':glucose,
-      'bp':bp,
-      'skinthickness':skinthickness,
-      'insulin':insulin,
-      'bmi':bmi,
-      'dpf':dpf,
-      'age':age
-   }
-   report_data = pd.DataFrame(user_report_data, index=[0])
-   return report_data
+      user_report_data = {
+         'pregnancies':pregnancies,
+         'glucose':glucose,
+         'bp':bp,
+         'skinthickness':skinthickness,
+         'insulin':insulin,
+         'bmi':bmi,
+         'dpf':dpf,
+         'age':age
+      }
+      report_data = pd.DataFrame(user_report_data, index=[0])
+      return report_data
 
 
   # PATIENT DATA
