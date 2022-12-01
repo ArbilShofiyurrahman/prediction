@@ -25,13 +25,23 @@ st.sidebar.header('Patient Data')
 st.subheader('Training Data Stats')
 st.write(df.describe())
 
-tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Pre - Processing", "Tab Modeling", "Tab Implementasi"])
+tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Visualisasi data", "Tab Modeling", "Tab Implementasi"])
 
 with tab1:
    st.write("Belum ada tab deskripsi data")
 
 with tab2:
    st.write("belum pre processing")
+   # Age vs Pregnancies
+   st.header('Pregnancy count Graph (Others vs Yours)')
+   fig_preg = plt.figure()
+   ax1 = sns.scatterplot(x = 'Age', y = 'Pregnancies', data = df, hue = 'Outcome', palette = 'Greens')
+   ax2 = sns.scatterplot(x = user_data['age'], y = user_data['pregnancies'], s = 150, color = color)
+   plt.xticks(np.arange(10,100,5))
+   plt.yticks(np.arange(0,20,2))
+   plt.title('0 - Healthy & 1 - Unhealthy')
+   st.pyplot(fig_preg)
+
     
 with tab3:
    st.write("belum tab modeling")   
