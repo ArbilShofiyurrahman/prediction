@@ -52,8 +52,9 @@ with tab2:
       'dpf':dpf,
       'age':age
    }
- report_data = pd.DataFrame(user_report_data, index=[0])
- return report_data
+   
+      report_data = pd.DataFrame(user_report_data, index=[0])
+      return report_data
 
 
   # PATIENT DATA
