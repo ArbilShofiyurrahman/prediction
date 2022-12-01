@@ -45,7 +45,7 @@ with tab2:
       # COLOR FUNCTION
       if user_result[0]==0:
          color = 'blue'
-       else:
+      else:
          color = 'red'
      
       user_report_data = {
