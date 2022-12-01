@@ -25,7 +25,7 @@ st.sidebar.header('Patient Data')
 st.subheader('Training Data Stats')
 st.write(df.describe())
 
-tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Visualisasi data", "Tab Modeling", "Tab Implementasi"])
+tab1, tab2, tab3 = st.tabs(["Deskripsi Data", "Tab Visualisasi data", "Tab Modeling"])
 
 with tab1:
    st.write("Belum ada tab deskripsi data")
