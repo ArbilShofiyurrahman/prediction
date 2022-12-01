@@ -28,16 +28,16 @@ st.write(df.describe())
 tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Pre - Processing", "Tab Modeling", "Tab Implementasi"])
 
 with tab1:
-   st.write("Belum")
+   st.write("Belum ada tab deskripsi data")
 
 with tab2:
-   st.write("belum")
+   st.write("belum pre processing")
     
 with tab3:
-   st.write("belum")   
+   st.write("belum tab modeling")   
 
 with tab4:
-   st.write("belum")
+   st.write("belum implementasi")
 
 
 # X AND Y DATA
