@@ -31,6 +31,11 @@ with tab1:
    st.write("Belum ada tab deskripsi data")
 
 with tab2:
+   # X AND Y DATA
+   x = df.drop(['Outcome'], axis = 1)
+   y = df.iloc[:, -1]
+   x_train, x_test, y_train, y_test = train_test_split(x,y, test_size = 0.2, random_state = 0)
+   
    # FUNCTION
    def user_report():
       pregnancies = st.sidebar.slider('Pregnancies', 0,17, 3 )
