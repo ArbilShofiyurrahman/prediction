@@ -149,9 +149,6 @@ with tab2:
 with tab3:
    st.write("belum tab modeling")   
 
-with tab4:
-   st.write("belum implementasi")
-
 
 # OUTPUT
 st.subheader('Your Report: ')
