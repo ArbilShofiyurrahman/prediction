@@ -41,6 +41,12 @@ with tab2:
       bmi = st.sidebar.slider('BMI', 0,67, 20 )
       dpf = st.sidebar.slider('Diabetes Pedigree Function', 0.0,2.4, 0.47 )
       age = st.sidebar.slider('Age', 21,88, 33 )
+      
+      # COLOR FUNCTION
+      if user_result[0]==0:
+         color = 'blue'
+       else:
+         color = 'red'
      
       user_report_data = {
          'pregnancies':pregnancies,
