@@ -25,6 +25,23 @@ st.sidebar.header('Patient Data')
 st.subheader('Training Data Stats')
 st.write(df.describe())
 
+tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Pre - Processing", "Tab Modeling", "Tab Implementasi"])
+
+with tab1:
+   st.image("")
+   st.write("Belum")
+
+with tab2:
+   st.image("")
+   st.write("belum")
+    
+with tab3:
+   st.image("")
+   st.write("belum")   
+
+with tab4:
+   st.write("belum")
+
 
 # X AND Y DATA
 x = df.drop(['Outcome'], axis = 1)
